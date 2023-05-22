@@ -1,0 +1,167 @@
+/* for CSS portion of the explore page */
+/*search bar*/
+
+.wd-search-container {
+  position: relative;
+}
+
+.wd-search-container .serch-bar {
+  border-width: 4px;
+  border-color: lightgrey;
+  border-style: solid;
+  border-radius: 50px;
+
+  background-color: lightgrey;
+
+  width: 80%;
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wd-search-container .wd-settings-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.wd-search-container .wd-search-icon {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/*horizontal unorder list tabs */
+
+.wd-unordered-list-horizontal {
+  font-size: large;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+.wd-unordered-list-horizontal li {
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  margin: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.wd-tab-container {
+  position:relative
+}
+
+.wd-tab-container .wd-dimension-portrait {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  color: blue;
+  background-color: blue;
+  z-index: 2;
+}
+
+.wd-tab-container .wd-dimension-portrait-blank {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  color: white;
+  background-color: white;
+  z-index: 2;
+}
+
+/* image article */
+
+.wd-img-container {
+  position: relative;
+}
+
+.wd-img-container .wd-img-text {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: white;
+  z-index: 1;
+}
+
+.wd-red-background {
+  background-color: red;
+}
+
+.wd-img-container .wd-news-image {
+  width: 100%;
+  max-height: 700px;
+}
+
+/* featured section*/
+
+.wd-unordered-list-vertical {
+  font-family: Arial, sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.wd-list-element-vertical {
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+}
+
+div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wd-list-element-vertical label {
+  color: grey;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+b {
+  color: black;
+}
+
+.wd-elips-label {
+  font-size: 20px;
+  color: grey;
+  text-align-last: right;
+}
+
+i {
+  color: grey;
+}
+
+.wd-ellipse {
+  display: flex;
+  align-items: right;
+}
+
+.wd-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* additional for bootsrap poriton */
+
+.wd-full-width {
+  margin: 0 auto;
+}
+
+.wd-left-align {
+  align-self: right;
+}
