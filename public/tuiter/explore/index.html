@@ -15,21 +15,103 @@
 
             <tr valign="top">
 
-                <td>
+                <td width="200px">
 
                     <!-- left sidebar -->
-                    
-                    <ul class="list-group">
-                        <li class="list-group-item"><a href="home.html">Home</a></li>
-                        <li class="list-group-item"><a href="explore.html">Explore</a></li>
-                        <li class="list-group-item"><a href="notifications.html">Notifications</a></li>
-                        <li class="list-group-item"><a href="messages.html">Messages</a></li>
-                        <li class="list-group-item"><a href="bookmarks.html">Bookmarks</a></li>
-                        <li class="list-group-item"><a href="lists.html">Lists</a></li>
-                        <li class="list-group-item"><a href="profile.html">Profile</a></li>
-                        <li class="list-group-item"><a href="tuit.html">Tuit</a></li>
-                        <li class="list-group-item"><a href="reply.html">Reply</a></li>
+
+                    <ul class="list-group nav-side-margins">
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fab fa-twitter fa-1x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-home fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Home</b></a></label></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-hashtag fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Explore</b></a></label></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-bell fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Notifications</b></a></label></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-envelope fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Messages</b></a></label></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-bookmark fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Bookmarks</b></a></label></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-list-ul fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Lists</b></a></label></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-user fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Profile</b></a></label></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="wd-container">
+                                <div class="element">
+                                    <a href="/tuiter/explore/blank.html">
+                                        <i class="fa fa-ellipsis-v fa-1x"></i>
+                                    </a>
+                                </div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>More</b></a></label></div>
+                            </div>
+                        </li>
                     </ul>
+
+                    <button class="btn btn-primary rounded-pill tuit-button nav-side-margins">Tuit</button>                    
 
                 </td>
 
@@ -38,41 +120,26 @@
                     <!-- main content -->
 
                     <div class="wd-search-container">
-                        <input type="text" class="serch-bar" id="input1" placeholder="Search Tuiter" width="100%">
-                        <a href="/tuiter/explore/blank.html"><i class="fa wd-settings-icon fa-cog fa-1x"></i></a>
+                        <input type="text" class="serch-bar-two" id="input1" placeholder="Search Tuiter" width="100%">
+                        <a href="/tuiter/explore/blank.html"><i class="fa wd-settings-icon fa-cog fa-3x"></i></a>
                         <i class="fa wd-search-icon fa-search fa-1x"></i>
                     </div>
-                
-                    <ul class="wd-unordered-list-horizontal">
-                        <li>
-                            <div class="wd-tab-container">
-                                <b>For You</b>
-                                <div class="wd-dimension-portrait">
-                            </div>
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><b>For You</b></a>
                         </li>
-                        <li>
-                            <div class="wd-tab-container">
-                                <a href="/tuiter/explore/blank.html"><b>Trending</b></a>
-                                <div class="wd-dimension-portrait-blank">
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Trending</b></a>
                         </li>
-                        <li>
-                            <div class="wd-tab-container">
-                                <a href="/tuiter/explore/blank.html"><b>News</b></a>
-                                <div class="wd-dimension-portrait-blank">
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>News</b></a>
                         </li>
-                        <li>
-                            <div class="wd-tab-container">
-                                <a href="/tuiter/explore/blank.html"><b>Sports</b></a>
-                                <div class="wd-dimension-portrait-blank">
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Sports</b></a>
                         </li>
-                        <li>
-                            <div class="wd-tab-container">
-                                <a href="/tuiter/explore/blank.html"><b>Entertainment</b></a>
-                                <div class="wd-dimension-portrait-blank">
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Entertainment</b></a>
                         </li>
                     </ul>
                     <div class="wd-img-container">
@@ -80,66 +147,86 @@
                             class="wd-news-image" alt="...">
                         <div class="wd-img-text">
                             <label>
-                                Event 
+                                Event
                             </label>
                             <label class="wd-red-background"> LIVE </label>
-                            <br/>
+                            <br />
                             <h2>110 Hurdels Finals</h2>
                         </div>
                     </div>
-                
+
                     <ul class="wd-unordered-list-vertical">
-                        <li class="wd-list-element-vertical">
+                        <li class="wd-list-element-vertical wd-rectangle-outline">
                             <div>
                                 <Label>Trending in News</Label>
                             </div>
                             <div class="wd-container">
                                 <div><label><a href="/tuiter/explore/blank.html"><b>Meghan</b></a></label></div>
-                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></i></a></div>
+                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></i></a>
+                                </div>
                             </div>
                             <div><label>56.1K Tuits</label></div>
                         </li>
-                        <li class="wd-list-element-vertical">
-                            <div><Label>Trending</Label></div>
+                        <li class="wd-list-element-vertical wd-rectangle-outline">
                             <div class="wd-container">
-                                <div><label><a href="/tuiter/explore/blank.html"><b>Starlink</b></a></label></div>
-                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></a></i></div>
+                                <div>
+                                    <div>
+                                        <label><a href="/tuiter/explore/blank.html"><b>Drive Tesla</b></a></label>
+                                        <img src="https://cdn.britannica.com/68/7068-004-7848FEB4/Flag-Canada.jpg" height="10">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/1200px-Twitter_Verified_Badge.svg.png"
+                                            height="10">
+                                        <label> @DriveTeslaca - May 5</label>
+                                    </div>
+                                    <div><Label>Trending</Label></div>
+                                    <div><label><a href="/tuiter/explore/blank.html"><b>Starlink</b></a></label></div>
+                                    <div><label>26.4K Tuits</label></div>
+                                </div>
+                                <div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                                    class="wd-code-elemnt-img">
+                                    <a href="/tuiter/explore/blank.html"></a>
+                                </div>
                             </div>
-                            <div><label>26.4K Tuits</label></div>
                         </li>
-                        <li class="wd-list-element-vertical">
+                        <li class="wd-list-element-vertical wd-rectangle-outline">
                             <div><Label>Trending in Buisness personalities</Label></div>
                             <div class="wd-container">
                                 <div><label><a href="/tuiter/explore/blank.html"><b>Warren Buffett</b></a></label></div>
-                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></a></i></div>
+                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></a></i>
+                                </div>
                             </div>
                             <div><label>5,502 Tuits</label></div>
                         </li>
-                        <li class="wd-list-element-vertical">
+                        <li class="wd-list-element-vertical wd-rectangle-outline">
                             <div><Label>Trending in Political figures</Label></div>
                             <div class="wd-container">
                                 <div><label><a href="/tuiter/explore/blank.html"><b>Poland</b></a></label></div>
-                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></a></i></div>
+                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></a></i>
+                                </div>
                             </div>
                             <div><label>29.9K Tuits</label></div>
                         </li>
-                        <li class="wd-list-element-vertical">
+                        <li class="wd-list-element-vertical wd-rectangle-outline">
                             <div><Label>Celebrities - Trending</Label></div>
                             <div class="wd-container">
-                                <div><label><a href="/tuiter/explore/blank.html"><b>Denzel Washington</b></a></label></div>
-                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></a></i></div>
+                                <div><label><a href="/tuiter/explore/blank.html"><b>Denzel Washington</b></a></label>
+                                </div>
+                                <div><a href="/tuiter/explore/blank.html"><i class="fa fa-ellipsis-h fa-1x"></a></i>
+                                </div>
                             </div>
                             <div><label>1,215 Tuits</label></div>
                         </li>
                     </ul>
 
                 </td>
-                <td>
+                <td width="400px">
 
                     <!-- right sidebar-->
-                    <ul class="list-group">
-                        <li class="list-group-item"><a href="home.html">Home</a></li>
-                        <li class="list-group-item"><a href="explore.html">Explore</a></li>
+                    <ul class="list-group nav-side-margins">
+                        <li class="list-group-item"><label><b>Who to follow</b></label></li>
+                        <li class="list-group-item">
+                            <img src="../fabiprofilepic.jpg" height="48px" class="wd-profile" />
+                        </li>
                         <li class="list-group-item"><a href="notifications.html">Notifications</a></li>
                         <li class="list-group-item"><a href="messages.html">Messages</a></li>
                         <li class="list-group-item"><a href="bookmarks.html">Bookmarks</a></li>
