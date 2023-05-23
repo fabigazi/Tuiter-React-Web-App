@@ -1,6 +1,7 @@
 /* for CSS portion of the explore page */
 /*search bar*/
 
+
 .wd-search-container {
   position: relative;
 }
@@ -108,7 +109,7 @@
   font-family: Arial, sans-serif;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-right: 20px;
   width: 100%;
 }
 
@@ -230,5 +231,40 @@ li {
 
 /* profile format */
 .wd-profile {
-  border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* follow list */
+
+.wd-subcontainer {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  margin-right: 70px;
+  z-index: 1;
+}
+
+.wd-subcontainer img {
+  margin-right: 10px;
+}
+
+.wd-follow-container {
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.wd-small-height {
+  margin-top: 8px;
+  height: 30px;
+  right:10px;
+  position:absolute;
+}
+
+.wd-white {
+  color: white;
+}
+
+.wd-blue-text {
+  color: rgb(13, 108, 218);
 }
