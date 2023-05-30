@@ -1,0 +1,20 @@
+[
+    {
+        "_id": 123,
+        "userName": "NASA",
+        "handle": "NASA",
+        "avatarIcon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTt_o_VaKFc1EPrRoP4uP81ktzVnuwA_n8vA&usqp=CAU"
+    },
+    {
+        "_id": 234,
+        "userName": "Tesla",
+        "handle": "tesla",
+        "avatarIcon": "https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_400x400.png"
+    },
+    {
+        "_id": 345,
+        "userName": "SpaceX",
+        "handle": "SpaceX",
+        "avatarIcon": "https://cdn.icon-icons.com/icons2/2389/PNG/512/spacex_logo_icon_144865.png"
+    }
+]

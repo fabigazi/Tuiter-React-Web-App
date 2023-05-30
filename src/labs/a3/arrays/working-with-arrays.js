@@ -1,4 +1,11 @@
-import HelloWorld from "../hello-world";
+import ArrayIndexAndLength from "./array-index-and-length";
+import AddingAndRemovingDataToFromArrays from "./adding-andremoving-data-to-from-arrays";
+import ForLoops from "./for-loops";
+import MapFunction from "./map-function";
+import FindFunction from "./find-function";
+import JSONStringify from "./json-stringify";
+import FindIndex from "./find-index";
+import FilterFunction from "./filter-function";
 
 function WorkingWithArrays() {
     var functionScoped = 2;
@@ -15,7 +22,7 @@ function WorkingWithArrays() {
     console.log(numberArray1);
     console.log(stringArray1);
     console.log(variableArray1);
-    
+
 
     return (
         <div>
@@ -23,6 +30,14 @@ function WorkingWithArrays() {
             numberArray1 = {numberArray1}<br />
             stringArray1 = {stringArray1}<br />
             variableArray1 = {variableArray1}<br />
+            <ArrayIndexAndLength />
+            <AddingAndRemovingDataToFromArrays />
+            <ForLoops />
+            <MapFunction />
+            <JSONStringify />
+            <FindFunction />
+            <FindIndex />
+            <FilterFunction />
         </div>
     );
 
