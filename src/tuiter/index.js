@@ -23,7 +23,7 @@ function Tuiter() {
                   <Route path="/profile" element={<ProfileScreen />} />
                </Routes>
             </div>
-            <div className="col-3">
+            <div className="col-3 d-none d-lg-block">
                <WhoToFollowList/>
             </div>
          </div>
