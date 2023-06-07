@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route} from "react-router";
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./home-screen";
@@ -11,6 +11,7 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import tuitsVTwoReducer from "./reducers/tuits-v-two-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
+import {Navigate} from "react-router-dom"
 const store = configureStore(
    { reducer: { who: whoReducer, tuits: tuitsReducer, tuitsTwo: tuitsVTwoReducer } });
 
@@ -25,6 +26,7 @@ function Tuiter() {
                </div>
                <div className="col-7 min-width-500">
                   <Routes>
+                     <Route path="/" element={<Navigate to="home" />} />
                      <Route path="/home" element={<HomeScreen />} />
                      <Route path="/explore" element={<ExploreScreen />} />
                      <Route path="/bookmarks" element={<BookmarksScreen />} />

@@ -27,5 +27,35 @@
         "likes": 5482,
         "handle": "@tesla",
         "tuit": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+    },
+
+    {
+        "_id": 456,
+        "topic": "Space",
+        "userName": "SpaceX",
+        "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+        "time": "5d",
+        "image": "https://www.spacex.com/static/images/share.jpg",
+        "liked": true,
+        "replies": 423,
+        "retuits": 700,
+        "likes": 8950,
+        "handle": "@spacex",
+        "tuit": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+    },
+
+    {
+        "_id": 567,
+        "topic": "Space",
+        "userName": "Nasa",
+        "title": "moon lander crashes on the moon due to coding error",
+        "time": "10d",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTt_o_VaKFc1EPrRoP4uP81ktzVnuwA_n8vA&usqp=CAU",
+        "liked": false,
+        "replies": 423,
+        "retuits": 700,
+        "likes": 15709,
+        "handle": "@nasa",
+        "tuit": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     }
 ]
