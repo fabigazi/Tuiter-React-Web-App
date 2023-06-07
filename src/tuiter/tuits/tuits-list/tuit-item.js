@@ -1,5 +1,14 @@
 import TuitStats from "./tuit-stats";
-function TuitItem( {tuit}) {
+import { deleteTuit } from "../../reducers/tuits-v-two-reducer";
+import {useDispatch} from "react-redux";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+function TuitItem({ tuit }) {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
+
     return (
         <li className="list-group-item">
             <div className="row">
@@ -7,7 +16,10 @@ function TuitItem( {tuit}) {
                     <img width={50} className="float-end rounded-circle" src={`${tuit.image}`} />
                 </div>
                 <div className="col-10">
-                    <div><b>{tuit.userName}</b> {tuit.handle} . {tuit.time}</div>
+                    <div><i className="bi bi-x float-end"
+                        onClick={() => deleteTuitHandler(tuit._id)}></i></div>
+                    <div>
+                        <b>{tuit.userName}</b> {tuit.handle} . {tuit.time}</div>
                     <div>{tuit.tuit}</div>
                     <div><TuitStats tuit={tuit} /></div>
                 </div>

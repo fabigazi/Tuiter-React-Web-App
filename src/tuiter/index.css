@@ -23,3 +23,7 @@
 .wd-top-4 {
     top: 4px;
 }
+
+.min-width-500 {
+    min-width: 600px;
+}

@@ -39,10 +39,15 @@ const tuitsVTwoSlice = createSlice({
             ...templateTuit,
             _id: (new Date()).getTime(),
             })
-        }
-          
-         
+        },
+
+        deleteTuit(state, action) {
+            const index = state.tuits
+               .findIndex(tuit =>
+                  tuit._id === action.payload);
+            state.tuits.splice(index, 1);
+          }, 
     }
 });
-export const {likedToggle, createTuit } = tuitsVTwoSlice.actions
+export const {likedToggle, createTuit, deleteTuit} = tuitsVTwoSlice.actions
 export default tuitsVTwoSlice.reducer;
