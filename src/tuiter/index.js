@@ -12,6 +12,7 @@ import tuitsVTwoReducer from "./reducers/tuits-v-two-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 import {Navigate} from "react-router-dom"
+
 const store = configureStore(
    { reducer: { who: whoReducer, tuits: tuitsReducer, tuitsTwo: tuitsVTwoReducer } });
 
