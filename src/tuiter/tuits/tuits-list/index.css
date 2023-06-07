@@ -1,5 +1,14 @@
 .container {
-    display: flex;
-    justify-content:space-between;
-    color: gray;
-  }
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.colorStyle {
+  color: #f91f35;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: gray;
+}

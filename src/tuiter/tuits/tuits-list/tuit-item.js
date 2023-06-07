@@ -1,9 +1,5 @@
 import TuitStats from "./tuit-stats";
-const TuitItem = (
-    {
-        tuit 
-    }
-) => {
+function TuitItem( {tuit}) {
     return (
         <li className="list-group-item">
             <div className="row">
@@ -13,7 +9,7 @@ const TuitItem = (
                 <div className="col-10">
                     <div><b>{tuit.userName}</b> {tuit.handle} . {tuit.time}</div>
                     <div>{tuit.tuit}</div>
-                    <div><TuitStats tuit={tuit}/></div>
+                    <div><TuitStats tuit={tuit} /></div>
                 </div>
             </div>
         </li>

@@ -1,11 +1,32 @@
 import './index.css';
+import { likedToggle } from '../../reducers/tuits-v-two-reducer';
+import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
 function TuitStats({ tuit }) {
+    const dispatch = useDispatch();
+    const [likes, setLikes] = useState(tuit.likes);
+    const [liked, setLiked] = useState(tuit.liked);
+    const tuitLiked = (tuit) => {
+        dispatch(likedToggle(tuit))
+    }
+    function liked2(){
+        if(liked) {
+            setLikes(likes - 1);
+        } else {
+            setLikes(likes + 1);
+        }
+        setLiked(!liked);
+    }
     return (
         <div className="container">
-            <div><i class="fa-regular fa-comment"></i> {tuit.replies}</div>
-            <div><i class="fa-solid fa-retweet"></i> {tuit.retuits}</div>
-            <div><i class="fa-regular fa-heart"></i> {tuit.likes}</div>
-            <div><i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i> </div>
+            <div><a  class="clickable-icon no-underline"><i class="fa-regular fa-comment"></i> {tuit.replies} </a></div>
+            <div><a  class="clickable-icon no-underline"><i class="fa-solid fa-retweet"></i> {tuit.retuits}</a></div>
+            <div onClick={() => liked2()}>{liked ? (
+              <a  class="clickable-icon no-underline"><i class="fa-solid fa-heart colorStyle" ></i></a>
+            ) : (
+                <a  class="clickable-icon no-underline"><i class="fa-regular fa-heart"></i></a>
+            )} {likes}</div>
+            <div><a  class="clickable-icon no-underline"><i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i></a> </div>
         </div>
     );
 };
