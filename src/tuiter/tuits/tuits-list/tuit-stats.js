@@ -1,7 +1,9 @@
 import './index.css';
 import { likedToggle } from '../../reducers/tuits-v-two-reducer';
+import { updateTuitThunk } from "../../services/tuits-thunks";
 import { useDispatch, useSelector } from "react-redux";
 import React, { useState } from "react";
+
 function TuitStats({ tuit }) {
     const dispatch = useDispatch();
     const [likes, setLikes] = useState(tuit.likes);
@@ -11,11 +13,14 @@ function TuitStats({ tuit }) {
     }
     function liked2(){
         if(liked) {
+            dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1, liked: !liked }))
             setLikes(likes - 1);
+            
         } else {
+            dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: !liked }))
             setLikes(likes + 1);
         }
-        setLiked(!liked);
+        setLiked(!liked)
     }
     return (
         <div className="container">

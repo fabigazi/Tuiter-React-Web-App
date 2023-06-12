@@ -6,7 +6,7 @@ import { BsEmojiSmile } from 'react-icons/bs';
 import { TbCalendarStats } from 'react-icons/tb';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BiBold, BiItalic } from 'react-icons/bi';
-import {createTuit} from "./reducers/tuits-v-two-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -14,9 +14,13 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
+            username: "NASA",
+            handle: "@nasa",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTt_o_VaKFc1EPrRoP4uP81ktzVnuwA_n8vA&usqp=CAU",
+            time: "20s",
             tuit: whatsHappening
           }
-          dispatch(createTuit(newTuit));
+          dispatch(createTuitThunk(newTuit));
           setWhatsHappening("");
     }
     return (

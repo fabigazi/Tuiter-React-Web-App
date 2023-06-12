@@ -12,9 +12,11 @@ import tuitsVTwoReducer from "./reducers/tuits-v-two-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 import {Navigate} from "react-router-dom"
+import LoginScreen from "./user/login-screen";
+import authReducer from "./reducers/auth-reducer";
 
 const store = configureStore(
-   { reducer: { who: whoReducer, tuits: tuitsReducer, tuitsTwo: tuitsVTwoReducer } });
+   { reducer: { who: whoReducer, tuits: tuitsReducer, tuitsTwo: tuitsVTwoReducer, user: authReducer} });
 
 function Tuiter() {
    return (
@@ -27,7 +29,8 @@ function Tuiter() {
                </div>
                <div className="col-7 min-width-500">
                   <Routes>
-                     <Route path="/" element={<Navigate to="home" />} />
+                     <Route path="/" element={<Navigate to="login" />} />
+                     <Route path="/login" element={<LoginScreen />} />
                      <Route path="/home" element={<HomeScreen />} />
                      <Route path="/explore" element={<ExploreScreen />} />
                      <Route path="/bookmarks" element={<BookmarksScreen />} />
