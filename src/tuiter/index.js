@@ -1,4 +1,4 @@
-import { Routes, Route} from "react-router";
+import { Routes, Route } from "react-router";
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./home-screen";
@@ -10,14 +10,14 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import tuitsVTwoReducer from "./reducers/tuits-v-two-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
-import {Navigate} from "react-router-dom"
+import { Navigate } from "react-router-dom"
 import LoginScreen from "./user/login-screen";
 import authReducer from "./reducers/auth-reducer";
 import RegisterScreen from "./user/register-screen";
 import ProfileScreen from "./user/profile-screen";
 
 const store = configureStore(
-   { reducer: { who: whoReducer, tuits: tuitsReducer, tuitsTwo: tuitsVTwoReducer, user: authReducer} });
+   { reducer: { who: whoReducer, tuits: tuitsReducer, tuitsTwo: tuitsVTwoReducer, user: authReducer } });
 
 function Tuiter() {
    return (
@@ -41,7 +41,9 @@ function Tuiter() {
                   </Routes>
                </div>
                <div className="col-3 d-none d-lg-block">
-                  <WhoToFollowList />
+                  <div className="min-width-400">
+                     <WhoToFollowList />
+                  </div>
                </div>
             </div>
          </div>

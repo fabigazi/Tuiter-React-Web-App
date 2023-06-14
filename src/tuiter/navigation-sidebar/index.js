@@ -8,7 +8,11 @@ const NavigationSidebar = () => {
     const { pathname } = useLocation();
     const [ignore, tuiter, active] = pathname.split("/");
     const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "more"];
-    const prof = ["login", "register"]
+    const profs = ["Login", "Register"]
+    const prof_of_icons = {
+        "Login": "fa fa-home fa-1x",
+        "Register": "fa fa-user fa-1x"
+    }
     const list_of_icons = {
         "home": "fa fa-home fa-1x",
         "explore": "fa fa-hashtag fa-1x wd-white",
@@ -19,9 +23,9 @@ const NavigationSidebar = () => {
         "profile": "fa fa-user fa-1x",
         "more": "fa fa-ellipsis-v fa-1x"
       };
-      let icon = 'home' in list_of_icons;
+
     return (
-        <div className="list-group">
+        <div className="list-group navigation-sidebar">
             {currentUser && links.map((link) =>
                 <div>
 
@@ -33,10 +37,16 @@ const NavigationSidebar = () => {
 
             )}
 
-            {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
-            {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
-            {currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
-                
+            {!currentUser && profs.map((prof) =>
+                <div>
+
+                    
+                    <Link to={`/tuiter/${prof}`} className={`list-group-item flex text-capitalize ${active === prof ? "active" : ""}`}>
+                        <i class={prof_of_icons[prof]} margin="10px"></i>  <span className="d-none d-lg-inline">{prof} </span>
+                    </Link>
+                    </div>
+
+            )}    
         </div>
     );
 };

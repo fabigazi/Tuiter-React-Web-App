@@ -11,16 +11,18 @@ function LoginScreen() {
     const dispatch = useDispatch();
     const handleLogin = async () => {
         try {
-            dispatch(loginThunk({ username, password }));
-            const test = user
-            //dispatch(loginThunk(user))
-            navigate("/tuiter/profile");
+            const test = await dispatch(loginThunk({ username, password }));
+            if("error" in test){
+                navigate("/tuiter/login");
+                alert("login unsucessfull try again");
+            } else
+                navigate("/tuiter/home");
         } catch (e) {
             alert(e);
         }
     };
     return (
-        <div>
+        <div className="row">
             <h1>Login Screen</h1>
             <div className="mt-2">
                 <label>Username</label>
