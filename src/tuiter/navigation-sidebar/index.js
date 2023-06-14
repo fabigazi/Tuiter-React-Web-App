@@ -8,6 +8,7 @@ const NavigationSidebar = () => {
     const { pathname } = useLocation();
     const [ignore, tuiter, active] = pathname.split("/");
     const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "more"];
+    const prof = ["login", "register"]
     const list_of_icons = {
         "home": "fa fa-home fa-1x",
         "explore": "fa fa-hashtag fa-1x wd-white",
@@ -21,16 +22,21 @@ const NavigationSidebar = () => {
       let icon = 'home' in list_of_icons;
     return (
         <div className="list-group">
-            {links.map((link) =>
+            {currentUser && links.map((link) =>
                 <div>
 
                     
                     <Link to={`/tuiter/${link}`} className={`list-group-item flex text-capitalize ${active === link ? "active" : ""}`}>
                         <i class={list_of_icons[link]} margin="10px"></i>  <span className="d-none d-lg-inline">{link} </span>
                     </Link>
-                </div>
+                    </div>
 
             )}
+
+            {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
+            {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
+            {currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
+                
         </div>
     );
 };

@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { loginThunk } from "../services/auth-thunks";
+
 function LoginScreen() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [user, setUser] = useState({}); // this is what he used in the video 1:57 class
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const handleLogin = async () => {
         try {
-            await dispatch(loginThunk({ username, password }));
-            navigate("/profile");
+            dispatch(loginThunk({ username, password }));
+            const test = user
+            //dispatch(loginThunk(user))
+            navigate("/tuiter/profile");
         } catch (e) {
             alert(e);
         }
