@@ -12,11 +12,13 @@ function LoginScreen() {
     const handleLogin = async () => {
         try {
             const test = await dispatch(loginThunk({ username, password }));
-            if("error" in test){
-                navigate("/tuiter/login");
-                alert("login unsucessfull try again");
-            } else
-                navigate("/tuiter/home");
+            setTimeout(() => {
+                if ("error" in test) {
+                    navigate("/tuiter/login");
+                    alert("login unsucessfull try again");
+                } else
+                    navigate("/tuiter/home");
+            }, 5000);
         } catch (e) {
             alert(e);
         }
