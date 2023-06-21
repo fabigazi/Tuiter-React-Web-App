@@ -12,12 +12,16 @@ function ProfileScreen() {
         dispatch(updateUserThunk(profile)); 
         alert("information saved");};
     useEffect(() => {
-        const fetchData = async () => {
-            const { payload } = await dispatch(profileThunk());
-            setProfile(payload);
-        };
+        const fetchProfile = async () => {
+            try {
+              const { payload } = await dispatch(profileThunk());
+              setProfile(payload);
+            } catch (error) {
+              console.error(error);
+            }
+          };
 
-        fetchData();
+        fetchProfile();
     }, []);
     return (<div className="row">
         
