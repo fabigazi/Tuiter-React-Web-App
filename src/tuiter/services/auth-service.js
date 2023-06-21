@@ -1,5 +1,5 @@
 import axios from "axios";
-const SERVER_API_URL = 'http://localhost:4000/api';//"https://tuiter-node-server-app-7k6l.onrender.com/api";
+const SERVER_API_URL =  "https://tuiter-node-server-app-7k6l.onrender.com/api"; //'http://localhost:4000/api';
 const USERS_URL = `${SERVER_API_URL}/users`;
 
 
